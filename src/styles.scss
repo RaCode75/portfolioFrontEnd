@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.bg-claro{
+    background-color: #f6f6f6;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
