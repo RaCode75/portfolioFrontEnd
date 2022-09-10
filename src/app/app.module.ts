@@ -8,6 +8,7 @@ import { CoreModule } from './core/core.module';
 import { EducacionModule } from './educacion/educacion.module';
 import { HomeModule } from './home/home.module';
 import { ProyectosModule } from './proyectos/proyectos.module';
+import { SharedModule } from './shared/shared.module';
 import { SkillsModule } from './skills/skills.module';
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SkillsModule } from './skills/skills.module';
     AcercaDeModule,
     EducacionModule,
     SkillsModule,
-    ProyectosModule
+    ProyectosModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
