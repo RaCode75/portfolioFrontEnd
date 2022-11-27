@@ -4,9 +4,100 @@
 
 .banner{
     background-color: #aaa;
-    height: 18rem;
+    max-height: 25rem;
+    overflow: hidden;
+    padding: 0;
+
+
+     .pcimg{
+        z-index: 400;
+        position: relative;
+        margin-left: 1%;
+        top: -16rem;
+        width: 70%;
+        border-radius: 5%;        
+        animation-name: introPc;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 0.5;
+        animation-fill-mode: forwards;
+     }
+
+     .tabimg{
+        z-index: 500;
+        position: relative;
+        left: -9rem;
+        top: -4rem;
+        width: 30%;
+        border-radius: 5%;
+        animation-name: introTab;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 0.5;
+        animation-fill-mode: forwards;
+     }
+
+     .cellimg{
+        z-index: 500;
+        position: relative;
+        right: -9rem;
+        top: -3rem;
+        width: 15%;
+        border-radius: 5%;
+        animation-name: introCell;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 0.5;
+        animation-fill-mode: forwards;
+     }
+
+        @keyframes introPc {
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(+17rem);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }       
+        }
+
+        @keyframes introTab {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(+5rem);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }       
+        }
+
+        @keyframes introCell {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-5rem);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }       
+        }   
+     
+
 }
 .text-card{
     background-color: #868686;
 }
 }
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) { 
+
+    .pcimg{
+        top: -14rem;
+    }
+    .tabimg{
+
+    }
+    .cellimg{
+
+    }
+ }
