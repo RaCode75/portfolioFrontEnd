@@ -3,8 +3,8 @@
     
 
 .banner{
-    background-color: #aaa;
-    max-height: 25rem;
+    background: linear-gradient(0deg, rgb(246, 246, 248) 0%, rgb(177, 177, 184) 50%, rgb(210, 214, 214) 100%);
+    //max-height: 25rem;
     overflow: hidden;
     padding: 0;
 
@@ -13,7 +13,7 @@
         z-index: 400;
         position: relative;
         margin-left: 1%;
-        top: -16rem;
+        top: -15rem;
         width: 70%;
         border-radius: 5%;        
         animation-name: introPc;
@@ -27,7 +27,7 @@
         z-index: 500;
         position: relative;
         left: -9rem;
-        top: -4rem;
+        top: -3rem;
         width: 30%;
         border-radius: 5%;
         animation-name: introTab;
@@ -41,7 +41,7 @@
         z-index: 500;
         position: relative;
         right: -9rem;
-        top: -3rem;
+        top: -2rem;
         width: 15%;
         border-radius: 5%;
         animation-name: introCell;
@@ -86,18 +86,39 @@
 .text-card{
     background-color: #868686;
 }
+
+@media screen and (min-width: 992px) {
+    .banner{
+        max-height: 25rem;
+        .tabimg{
+            top: -7rem;
+            left: -11rem;
+        }
+
+        .cellimg{
+            top: -5.5rem;
+            right: -11rem;
+        }
+}
+    
 }
 
-/* Large devices (desktops, 992px and up)*/
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 1440px) {
+    .banner{
+        max-height: 26rem;
+        .tabimg{
+            top: -15rem;
+            left: -14rem;
+        }
 
-    .pcimg{
-        top: -14rem;
-    }
-    .tabimg{
+        .cellimg{
+            top: -12.8rem;
+            right: -14rem;
+        }
+}
+    
+}
 
-    }
-    .cellimg{
+}
 
-    }
- }
+
