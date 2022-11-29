@@ -5,11 +5,40 @@
 #e6e6fa lavender
 #1c2841 japanese indigo
 #f2f3f4 anti flash white
+#e0b0ff lila
 
 */
-
+//@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "./assets/scss/modules/fonts";
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+
+/****************************
+*    FONTS
+*****************************/
+
+$primary_font: 'Roboto';
+
+//font-wieght
+$thin:100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+//Font-size
+$font-xs: 12px;
+$font-sm: 14px;
+$primary_fs: 16px;
+$font-md: 18px;
+$font-lg: 20px;
+
+body {
+    font-family: $primary_font;
+    font-size: $primary_fs;
+    font-weight: $regular;
+}
 
 *{
     margin: 0;
