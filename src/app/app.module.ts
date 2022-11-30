@@ -11,6 +11,7 @@ import { ProyectosModule } from './proyectos/proyectos.module';
 import { SharedModule } from './shared/shared.module';
 import { SkillsModule } from './skills/skills.module';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -24,9 +25,11 @@ import { SkillsModule } from './skills/skills.module';
     EducacionModule,
     SkillsModule,
     ProyectosModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
