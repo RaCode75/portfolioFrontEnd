@@ -26,7 +26,7 @@ $font-lg: 20px;
 
 
 
-:root{
+
      /******************
     *   Colors
     *******************/
@@ -36,16 +36,25 @@ $font-lg: 20px;
     $lighter-blue: #00d4ff;
     $light-gray:#edf6ff;
     $lavender: #e6e6fa; 
-    $jap-indigo: #1c2841;
+    //$jap-indigo: #1c2841;
+    $charcoal: #36454f;
+    $medium-gray: #6C757D;
     $anti-flash: #f2f3f4; 
     $lila: #e0b0ff; 
-}
+
 
 body {
     font-family: $primary_font;
     font-size: $primary_fs;
     font-weight: $regular;
+    color: $medium-gray;
+    background-color: #fff;
+
+    h2, h1 {
+        color: $charcoal;
+    }
 }
+
 
 *{
     margin: 0;
