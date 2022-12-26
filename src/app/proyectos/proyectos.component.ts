@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./proyectos.component.scss']
 })
 export class ProyectosComponent implements OnInit {
-
-  constructor() { }
+  list: number[] = [1,2,3];
+  constructor() {}
 
   ngOnInit(): void {
+    
   }
 
 }

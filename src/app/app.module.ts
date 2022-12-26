@@ -11,9 +11,11 @@ import { ProyectosModule } from './proyectos/proyectos.module';
 import { SharedModule } from './shared/shared.module';
 import { SkillsModule } from './skills/skills.module';
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
