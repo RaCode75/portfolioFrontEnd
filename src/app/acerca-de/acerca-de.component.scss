@@ -1,11 +1,15 @@
+.acerca_de{
+    background-color: #F5F6F7;
+}
+
 .foto{
     height: 7rem;
     width:7rem;
-    margin-top: -1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #333;
     color:#fff;
     border-radius: 50%;
+    border: solid 1px black;
 }

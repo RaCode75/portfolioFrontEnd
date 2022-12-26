@@ -1,5 +1,60 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "./assets/scss/modules/fonts";
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+
+/****************************
+*    FONTS
+*****************************/
+
+$primary_font: 'Roboto';
+
+//font-wieght
+$thin:100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+//Font-size
+$font-xs: 12px;
+$font-sm: 14px;
+$primary_fs: 16px;
+$font-md: 18px;
+$font-lg: 20px;
+
+
+
+
+     /******************
+    *   Colors
+    *******************/
+    $palid-blue: #437fc7;
+    $dark-blue: #090979;
+    $light-blue: #6daffe;
+    $lighter-blue: #00d4ff;
+    $light-gray:#edf6ff;
+    $lavender: #e6e6fa; 
+    //$jap-indigo: #1c2841;
+    $charcoal: #36454f;
+    $medium-gray: #6C757D;
+    $anti-flash: #f2f3f4; 
+    $lila: #e0b0ff; 
+
+
+body {
+    font-family: $primary_font;
+    font-size: $primary_fs;
+    font-weight: $regular;
+    color: $medium-gray;
+    background-color: #fff;
+
+    h2, h1 {
+        color: $charcoal;
+    }
+}
+
 
 *{
     margin: 0;
@@ -11,15 +66,4 @@
     background-color: #f6f6f6;
 }
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
 
- }
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-
- }
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {  }

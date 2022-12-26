@@ -1,12 +1,145 @@
+
+
 .home{
-    background-color: #444;
+    background-color: #f2f3f4;
     
 
 .banner{
-    background-color: #aaa;
-    height: 18rem;
+    background: linear-gradient(0deg, rgb(246, 246, 248) 0%, rgb(177, 177, 184) 50%, rgb(210, 214, 214) 100%);
+    overflow: hidden;
+    padding: 0;
+
+
+     .pcimg{
+        z-index: 400;
+        position: relative;
+        margin-left: 1%;
+        top: -15rem;
+        width: 70%;
+        border-radius: 5%;        
+        animation-name: introPc;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 0.5;
+        animation-fill-mode: forwards;
+     }
+
+     .tabimg{
+        z-index: 500;
+        position: relative;
+        left: -9rem;
+        top: -3rem;
+        width: 30%;
+        border-radius: 5%;
+        animation-name: introTab;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 0.5;
+        animation-fill-mode: forwards;
+     }
+
+     .cellimg{
+        z-index: 500;
+        position: relative;
+        right: -9rem;
+        top: -2rem;
+        width: 15%;
+        border-radius: 5%;
+        animation-name: introCell;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 0.5;
+        animation-fill-mode: forwards;
+     }
+
+        @keyframes introPc {
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(+17rem);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }       
+        }
+
+        @keyframes introTab {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(+5rem);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }       
+        }
+
+        @keyframes introCell {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-5rem);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }       
+        }   
+     
+
 }
-.text-card{
-    background-color: #868686;
+
+    // .text-card{
+    //     background-color: hsla(228, 45%, 87%, 0.5);
+    // }
+
+    .btn-portfolio{
+        margin: 2rem auto;
+        background: linear-gradient(90deg, rgba(109, 175, 254, 1) 0%, rgba(9,9,121,1) 100%);
+        width: 70%;
+        height: 3rem;
+        color:#A6CCED;
+        border: none;
+
+    }
+
+    .btn-portfolio:hover{
+        border: solid 2px rgba(109, 175, 254, 1);
+        color: #CFD5ED;
+
+        .fa-icon{
+            color: white;
+        }
+    }
+
+//MEDIA-QUERIES//////////////////////////////////////////////
+
+@media screen and (min-width: 992px) {
+    .banner{
+        max-height: 25rem;
+        .tabimg{
+            top: -7rem;
+            left: -11rem;
+        }
+
+        .cellimg{
+            top: -5.5rem;
+            right: -11rem;
+        }
 }
+    
 }
+
+@media screen and (min-width: 1440px) {
+    .banner{
+        max-height: 26rem;
+        .tabimg{
+            top: -15rem;
+            left: -14rem;
+            }
+
+        .cellimg{
+            top: -12.8rem;
+            right: -14rem;
+            }
+        }    
+    }
+}
+
+
