@@ -22,35 +22,46 @@
               Skills
             </a>
             </li>
-            <li>
-              <!--Login-->
-              <div class="dropstart">
-                <button type="button" class="btn btn-dark " data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="-20,0">
-                  Login
-                </button>
-                <form class="dropdown-menu dropdown-menu-dark bg-dark p-4">
-                  <div class="mb-3">
-                    <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-                  </div>
-                  <div class="mb-3">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                      <label class="form-check-label" for="dropdownCheck2">
-                        Recordarme
-                      </label>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-dark">Login</button>
-                </form>
-              </div>
-              <!--fin login-->
-            </li>
+            *ngIf="!isLogin"
+            <li class="nav-item">
+              <button type="button" class="btn btn-modal px-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Login
+              </button>
+              </li>
+            *ngIf="isLogin"
+            <li class="nav-item">
+              <button type="button" class="btn btn-modal px-4" (click)="logout()">
+                Logout
+              </button>
+              </li>
           </ul>       
         </div>
     </div>
   </nav>
+  <!--Modal Login-->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formLogin" (ngSubmit)="login()">
+            <div class="example-form">
+                <div class="login-input mb-3" >
+                  <input type="text" placeholder="Email" value="" autocomplete="off" formControlName="email">
+                </div>
+              
+                <div class="login-input, mb-3">
+                    <input type="password" placeholder="Password" value="" autocomplete="off" formControlName="password">
+                </div>
+              </div>
+              <button  type="submit"
+                class="login-input login-btn btn-primary"
+                [disabled]="formLogin.invalid">Enviar</button>
+        </form>  
+        </div>
+      </div>
+    </div>
+  </div>

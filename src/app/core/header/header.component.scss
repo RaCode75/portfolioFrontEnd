@@ -8,13 +8,13 @@
         align-items: center;       
     }
 
-    .btn-dark{
-        background: linear-gradient(0deg, rgba(109, 175, 254, 1) 0%,
-        rgba(9,9,121,1) 3%,
-        rgba(109, 175, 254, 1) 99%,
-        rgba(9,9,121,1) 100%);
+    .btn-modal{
+        background: none;
+        color:#B8CBEC;
         border: none;
-
+    }
+    .btn-modal:hover{
+        color:#F2FFFF;
     } 
 }
 

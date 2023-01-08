@@ -6,9 +6,11 @@ import {  faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+
   ],
   imports: [
     CommonModule,
